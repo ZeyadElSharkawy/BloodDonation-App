@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_draw"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="110px"
+        android:fontFamily="sans-serif"
+        android:textSize="72px"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="800px"
+        android:layout_height="140px"
+        android:background="@drawable/edittext_bg"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="80px"
+        android:hint="Username or email"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="800px"
+        android:layout_height="140px"
+        android:background="@drawable/edittext_bg"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="40px"
+        android:hint="Password"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonlogin"
+        android:layout_marginTop="60px"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or connect to social media"
+        android:layout_marginTop="60px"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/loginFacebook"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@drawable/facebook_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/line"
+        android:layout_marginTop="110px"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="95dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/goToSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="15px"
+            android:textColor="#CA2525"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
